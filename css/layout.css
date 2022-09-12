@@ -20,6 +20,11 @@
     margin: 0 auto;
   }
 
+  /* Icons */
+  i {
+    padding-right: 0.5em;
+  }
+
   /* NAV BAR */
   nav {
     display: flex;
