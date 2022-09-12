@@ -49,3 +49,16 @@ footer a {
 footer h3 {
     color: #FFB1A5;
 }
+
+/* Buttons styling */
+.btn-primary {
+    background-color: #0A3A3F;
+    color: #fff;
+    border-radius: 0.8em;
+}
+
+.btn-secondary {
+    color: #0A3A3F;
+    border-radius: 0.8em;
+    border: 1px solid #0A3A3F;
+}
