@@ -111,7 +111,7 @@
   }
 
   /* SKILLS */
-  .skills h2 {
+  #subheading {
     margin: 2em auto 1em auto;
   }
 
@@ -137,6 +137,54 @@
   .skills-list li img {
     width: 40px;
     height: 40px;
+  }
+
+  /* Projects section */
+  .cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto auto 1fr;
+  }
+
+  .card img {
+    grid-column: 1/3;
+    grid-row: 1/5;
+    height: 240px;
+  }
+
+  .card .card-text {
+    grid-column: 2/8;
+    grid-row: 2/4;
+    padding: 1em;
+
+    background-color:snow;
+  }
+
+  .skills-tag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  .text-light {
+    font-weight: 300;
+  }
+
+  .tag {
+    background-color: black;
+    color: white;
+    padding: 0.5em;
   }
 
   /* MEDIA QUERIES */
@@ -170,5 +218,13 @@
     /* Skills */
     .skills-list {
       grid-template-columns: 1fr;
+    }
+
+    .card img {
+      display: none;
+    }
+
+    .card .card-text {
+      grid-column: 1/8;
     }
   }
