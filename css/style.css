@@ -1,3 +1,174 @@
-body {
-    background: blue;
+/* Root fixes */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
+
+/* scale all images, and media to accomodate responsive layout. */
+    img, video, audio, iframe, table, form { 
+    width:100%; /* IE */
+    max-width: 100%; /* FF, Safari, Chrome */
+  }
+
+  /* Wrapper class */
+  .wrapper {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  /* NAV BAR */
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    background-color: white;
+    padding-top: 1em;
+  }
+  
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    list-style: none;
+    margin: 0;
+  }
+
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: black;
+  }
+
+  /* HEADER */
+  header {
+    /* height: 80vh; */
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+
+    margin: 1.5em auto;
+    height: 100%;
+    padding: 6em 4em;
+
+    border: 1px solid black;
+  }
+
+  /* Header text */
+  .header-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .header-text h3 span {
+    font-style: italic;
+  }
+
+  h3 h1 {
+    word-wrap: break-word;
+    text-justify: auto;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  .btn-container a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+    background-color: black;
+  }
+
+  /* Header image */
+  .header-container img {
+    width: 240px;
+    height: 240px;
+  }
+
+  /* SKILLS */
+  .skills h2 {
+    margin: 2em auto 1em auto;
+  }
+
+  .skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+
+    list-style: none;
+  }
+
+  .skills-list li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+
+    /* placeholder border */
+    border: 1px solid black;
+  }
+
+  .skills-list li img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* MEDIA QUERIES */
+
+  /* max-width 768px */
+  @media all and (max-width: 768px) {
+
+    /* Nav bar */
+    nav > a {
+      display: none;
+    }
+
+    nav{
+      justify-content: center;
+    }
+
+    /* Header */
+
+    .header-container {
+      flex-direction: column;
+    }
+
+    .btn-container {
+      justify-content: center;
+    }
+
+    .header-container img {
+      order: -1;
+    }
+
+    /* Skills */
+    .skills-list {
+      grid-template-columns: 1fr;
+    }
+  }
