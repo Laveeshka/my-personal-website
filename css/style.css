@@ -187,6 +187,36 @@
     padding: 0.5em;
   }
 
+  /* Footer */
+  footer {
+    padding-bottom: 3em;
+  }
+
+  footer h2 {
+    margin: 2em auto 1em auto;
+  }
+
+  .work, .contact {
+    list-style: none;
+    margin: 0;
+  }
+
+  footer a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    color: black;
+  }
+  
+  #footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #work, #contact {
+    grid-column: 1fr;
+  }
+
   /* MEDIA QUERIES */
 
   /* max-width 768px */
@@ -220,6 +250,7 @@
       grid-template-columns: 1fr;
     }
 
+    /* Projects */
     .card img {
       display: none;
     }
