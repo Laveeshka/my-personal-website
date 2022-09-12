@@ -1,0 +1,51 @@
+h1, h2, h3, p {
+    color: #0A3A3F;
+}
+
+body, nav {
+    background-color: #F6F9F9
+}
+
+/* Header */
+
+.header-container {
+    background: linear-gradient(103.05deg, rgba(255, 231, 231, 0.74) 40.8%, rgba(57, 171, 183, 0.79) 110.4%);
+    border-radius: 1em;
+    border: none;
+}
+
+/* Skills */
+
+.skills-list li {
+    border: 3px solid #FFE7E7;
+    border-radius: 1em;
+    /* background-color: #FFE7E7; */
+}
+
+/* Projects */
+
+#projects {
+    background-color: #FFE7E7;
+}
+
+.card img {
+    border-radius: 4em;
+}
+
+.card .card-text {
+    border-radius: 1em;
+    background-color: #F6F9F9;
+}
+
+#projects h3 {
+    color: #FFB1A5;
+}
+
+/* Footer */
+footer a {
+    color: #0A3A3F;
+}
+
+footer h3 {
+    color: #FFB1A5;
+}
