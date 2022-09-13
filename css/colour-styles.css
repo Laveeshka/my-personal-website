@@ -3,9 +3,17 @@ h1, h2, h3, p {
 }
 
 body, nav {
-    background-color: #F6F9F9
+    background-color: #F6F9F9;
 }
 
+/* Nav bar */
+.navigation a {
+    color:#0D484E;
+}
+
+.navigation a:hover {
+    background-color: #FFE7E7;
+}
 
 /* Header */
 
