@@ -37,8 +37,8 @@
   }
   
   .logo {
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
   }
 
   .navigation {
@@ -53,6 +53,7 @@
 
   .navigation a {
     text-decoration: none;
+    font-size: 1.2em;
     display: block;
     padding: 0.8em 1em;
     border-radius: 0.5em;
