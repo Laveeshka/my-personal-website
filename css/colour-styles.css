@@ -6,6 +6,7 @@ body, nav {
     background-color: #F6F9F9
 }
 
+
 /* Header */
 
 .header-container {
@@ -57,10 +58,19 @@ footer h3 {
     border-radius: 0.8em;
 }
 
+.btn-primary:hover {
+    background-color: #FFB1A5;
+}
+
 .btn-secondary {
     color: #0A3A3F;
     border-radius: 0.8em;
     border: 1px solid #0A3A3F;
+}
+
+.btn-secondary:hover {
+    color: #FFB1A5;
+    border: 1px solid #FFB1A5;
 }
 
 /* Tags styling */
