@@ -1,3 +1,8 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content is added by JavaScript";
-document.querySelector("body").appendChild(h2);
+document.getElementById('nav').addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = e.target;
+    if (target.classList.contains('link_a')) {
+        const id = target.getAttribute('href').slice(1);
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+});
