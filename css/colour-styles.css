@@ -1,5 +1,6 @@
 h1, h2, h3, p {
     color: #0A3A3F;
+    font-family: 'Laila', sans-serif;
 }
 
 body, nav {
@@ -48,6 +49,11 @@ body, nav {
 
 #projects h3 {
     color: #FFB1A5;
+}
+
+p .text-light {
+    font-weight: 300;
+    font-size: 14px;
 }
 
 /* Footer */
