@@ -27,8 +27,9 @@ body, nav {
 /* Skills */
 
 .skills-list li {
-    border: 1px solid #0D484E;
+    border: 1px solid #FFE7E7;
     border-radius: 1em;
+    background-color: rgba(209, 241, 244, 0.3);
     /* background-color: #FFE7E7; */
 }
 
