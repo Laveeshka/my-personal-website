@@ -97,7 +97,7 @@ nav {
 
   .btn-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1em;
     justify-content: center;
   }
@@ -109,8 +109,8 @@ nav {
   }
 
   .header-container img {
-    width: 240px;
-    height: 240px;
+    width: 160px;
+    height: 160px;
     order: -1;
   }
 
@@ -227,6 +227,15 @@ nav {
 
 /* MEDIA QUERY - MIN 768px WIDTH */
 @media all and (min-width: 768px){
+    /* header */
+    .header-container img {
+        width: 240px;
+        height: 240px;
+      }
+
+      .btn-container {
+        flex-direction: row;
+      }
 
     /* footer */
     #footer-links {
