@@ -32,7 +32,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     background-color: white;
     padding-top: 1em;
   }
@@ -46,7 +46,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
 
     list-style: none;
     margin: 0;
@@ -54,9 +54,9 @@ nav {
 
   .navigation a {
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1em;
     display: block;
-    padding: 0.8em 1em;
+    padding: 0.5em 0.8em;
     border-radius: 0.5em;
   }
 
@@ -64,6 +64,7 @@ nav {
     display: none;
   }
 
+  
   /* Header */
   .header-container {
     display: flex;
@@ -227,6 +228,15 @@ nav {
 
 /* MEDIA QUERY - MIN 768px WIDTH */
 @media all and (min-width: 768px){
+    /* nav bar */
+    .navigation a {
+        text-decoration: none;
+        font-size: 1.2em;
+        display: block;
+        padding: 0.8em 1em;
+        border-radius: 0.5em;
+      }
+
     /* header */
     .header-container img {
         width: 240px;
