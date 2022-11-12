@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link tags (css stylesheets, fonts and icons) -->
-    <!-- <link rel="stylesheet" href="./css/layout.css"> -->
     <link rel="stylesheet" href="./css/mobile-first-layout.css">
     <link rel="stylesheet" href="./css/colour-styles.css">
     <!-- Fonts -->
@@ -15,13 +14,14 @@
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/3b618d9a27.js" crossorigin="anonymous"></script>
     <title>My Personal Website</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
 </head>
 <body>
     <!-- Nav Bar -->
     <div id="nav_bar">
         <div class="nav-wrap">
             <nav id="nav">
-                <a href="#"><img class="logo" src="./images/lavee-logo.png" alt="Laveeshka's logo"></a>
+                <a href="#"><img class="logo" src="./images/logo/lavee-logo.png" alt="Laveeshka's logo"></a>
                 <ul class="navigation">
                     <li class="link"><a href="#header" class="link_a">About</a></li>
                     <li class="link"><a href="#skills" class="link_a">Skills</a></li>
@@ -54,7 +54,7 @@
                         
                     </div>
                 
-                    <img src="./images/illustration.svg" alt="Illustration">
+                    <img src="./images/header/illustration.svg" alt="Illustration">
                 </div>
             </header>
         </div>
@@ -67,20 +67,28 @@
                 <h2 id="subheading">Skills</h2>
                 <ul class="skills-list">
                     <li>
-                        <img src="./images/html-5-logo-svgrepo-com.svg" alt="HTML logo">
+                        <img src="./images/skills/html-5-logo-svgrepo-com.svg" alt="HTML logo">
                         <p>HTML</p>
                     </li>
                     <li>
-                        <img src="./images/css-3-logo-svgrepo-com.svg" alt="CSS logo">
+                        <img src="./images/skills/css-3-logo-svgrepo-com.svg" alt="CSS logo">
                         <p>CSS</p>
                     </li>
                     <li>
-                        <img src="./images/javascript-logo-svgrepo-com.svg" alt="JavaScript logo">
+                        <img src="./images/skills/javascript-logo-svgrepo-com.svg" alt="JavaScript logo">
                         <p>JavaScript</p>
                     </li>
                     <li>
-                        <img src="./images/git-icon-logo-svgrepo-com.svg" alt="Git logo">
+                        <img src="./images/skills/git-icon-logo-svgrepo-com.svg" alt="Git logo">
                         <p>Git</p>
+                    </li>
+                    <li>
+                        <img src="./images/skills/react-2.svg" alt="React.js logo">
+                        <p>React.js</p>
+                    </li>
+                    <li>
+                        <img src="./images/skills/ruby.svg" alt="Ruby logo">
+                        <p>Ruby</p>
                     </li>
                 </ul>
             </div>
@@ -94,10 +102,10 @@
                 <h2 id="subheading">Projects</h2>
                 <div class="cards-list">
                     <!-- First card -->
-                    <div class="card">
-                        <img src="./images/banh-mi-unsplash.jpg" alt="Project 1 image">
+                    <a target="_blank" href="/" class="card">
+                        <img src="./images/projects/personal_website.png" alt="My Personal Website">
                         <div class="card-text">
-                            <h3>Best Banh Mi in Melbourne</h3>
+                            <h3>My Personal Website</h3>
                             <div class="skills-tag">
                                 <p class="text-light">Used</p>
                                 <div class="tag">HTML</div>
@@ -115,16 +123,17 @@
                                 nostrud exercitation ullamco laboris 
                                 nisi</p>
                         </div>
-                    </div>
+                    </a>
                     <!-- Second card -->
-                    <div class="card">
-                        <img src="./images/magpie-unsplash.jpg" alt="Project 1 image">
+                    <a target="_blank" href="https://laveeshka.github.io/opensea-search/" class="card">
+                        <img src="./images/projects/opensea-search.png" alt="OpenSea Search">
                         <div class="card-text">
-                            <h3>Magpie swooping adventures</h3>
+                            <h3>OpenSea Search</h3>
                             <div class="skills-tag">
                                 <p class="text-light">Used</p>
                                 <div class="tag">HTML</div>
                                 <div class="tag">CSS</div>
+                                <div class="tag">JavaScript</div>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur 
                                 adipiscing elit, sed do eiusmod tempor 
@@ -138,16 +147,16 @@
                                 nostrud exercitation ullamco laboris 
                                 nisi</p>
                         </div>
-                    </div>
+                    </a>
                     <!-- Third card -->
-                    <div class="card">
-                        <img src="./images/wally-unsplash.jpg" alt="Project 1 image">
+                    <a target="_blank" href="https://wizarding-duel.netlify.app/" class="card">
+                        <img src="./images/projects/wizarding-duel.png" alt="Wizarding Duel">
                         <div class="card-text">
-                            <h3>Where's Wally?</h3>
+                            <h3>Wizarding Duel</h3>
                             <div class="skills-tag">
                                 <p class="text-light">Used</p>
-                                <div class="tag">HTML</div>
-                                <div class="tag">CSS</div>
+                                <div class="tag">React.js</div>
+                                <div class="tag">Styled Components</div>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur 
                                 adipiscing elit, sed do eiusmod tempor 
@@ -161,7 +170,7 @@
                                 nostrud exercitation ullamco laboris 
                                 nisi</p>
                         </div>
-                    </div>
+                    </a>
                     <!-- End of cards -->
                 </div>
             </div>
@@ -187,7 +196,7 @@
                     <div id="contact">
                         <h3>REACH OUT</h3>
                     <ul class="contact">
-                        <li><a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/laveeshka/"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
                         <li><a href="mailto:laveeshka.mahadea@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a></li>
                         <li><a href="tel:+61473680166"><i class="fa-solid fa-phone"></i>Contact number</a></li>
                     </ul>
